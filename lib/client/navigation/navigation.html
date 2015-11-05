@@ -1,0 +1,57 @@
+<template name="navigationBar">
+
+  <nav class="navigation-bar">
+    <ul class="navigation-list">
+      <li class="navigation-item navigation-brand">
+        <a href="/"><img src="packages/adamsidiali_hippoverse-static/public/assets/navbar-brand.png" alt="" /></a>
+      </li>
+      <li class="navigation-item">
+        <a href="/features">Features</a>
+      </li>
+      <li class="navigation-item">
+        <a href="/pricing">Pricing</a>
+      </li>
+      <li class="navigation-item">
+        <a href="/about">About</a>
+      </li>
+      <li class="navigation-item">
+        <a href="/certification">Certification</a>
+      </li>
+      <li class="navigation-item">
+        <a href="/join-our-team">Join Our Team</a>
+      </li>
+      <li class="navigation-item contact-us">
+        <a href="#">Contact Us</a>
+      </li>
+      <li class="navigation-item sign-up">
+        <a href="/register"><i class="ion-compose"></i>Sign Up</a>
+      </li>
+      <li class="navigation-item log-in">
+        <a href="/login"><i class="ion-person"></i>Login</a>
+      </li>
+      <li class="navigation-item mobile-nav-toggle"><i class="ion-android-menu"></i></li>
+    </ul>
+  </nav>
+
+  {{#if showSideMenu}}
+    {{>sideMenu}}
+  {{/if}}
+
+</template>
+
+<template name="sideMenu">
+
+  <div class="side-menu-bg"> </div>
+  <div class="side-menu animated slideInRight">
+    <ul>
+      <li class="account"><a href="/login"><i class="ion-person"></i> Login</a></li>
+      <li class="account"><a href="/register"><i class="ion-compose"></i> Sign Up</a></li>
+      <li><a href="/features">Features</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/certification">Certification</a></li>
+      <li><a href="/join-our-team">Join Our Team</a></li>
+      <li><a href="#" class="contact-us">Contact Us</a></li>
+    </ul>
+  </div>
+</template>

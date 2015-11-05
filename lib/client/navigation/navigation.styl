@@ -1,0 +1,117 @@
+nav.navigation-bar
+  position fixed
+  top 0
+  left 0
+  right 0
+  height 60px
+  width 100vw
+  margin 0
+  padding 0
+  background-color transparent
+  z-index 999
+  transition 300ms ease-out
+
+  &.js-bg
+    background-color #fff
+    transition 300ms ease-out
+    box-shadow 0 0 10px rgba(0,0,0,0.3)
+
+    ul.navigation-list > .navigation-item > a
+      color #aaa
+
+  ul.navigation-list
+    margin 0
+    padding 0 20px
+    height 60px
+    list-style none
+    display flex
+    display -webkit-flex
+    flex-flow row nowrap
+    -webkit-flex-flow row nowrap
+    justify-content flex-start
+    -webkit-justify-content flex-start
+
+    .navigation-item
+      margin auto 10px
+      flex 0 0 auto
+      -webkit-flex 0 0 auto
+
+      @media (max-width:900px)
+        display none
+
+      a
+        text-decoration none
+        text-transform capitalize
+        font-weight 400
+        color #ccc
+        font-size 16px
+
+        i
+          margin-right 5px
+
+      &.navigation-brand
+        margin-right 20px
+        img
+          padding-top 5px
+
+        @media (max-width:900px)
+          display block !important
+
+      &.mobile-nav-toggle
+        display none
+        margin-left auto
+        font-size 30px
+        color #aaa
+
+        @media (max-width:900px)
+          display block !important
+
+      &.sign-up
+        margin-left auto
+
+.side-menu-bg
+  position fixed
+  top 0
+  bottom 0
+  right 0
+  left 0
+  background-color rgba(0,0,0,0.5)
+  z-index 9999999999
+
+.side-menu
+  position fixed
+  top 0
+  bottom 0
+  right 0
+  width 300px
+  background-color #75caeb
+  z-index 999999999999
+  display flex
+  display -webkit-flex
+  flex-flow column nowrap
+  -webkit-flex-flow column nowrap
+  justify-content center
+  -webkit-justify-content center
+
+  ul
+    list-style none
+    margin 0
+    padding 40px 20px
+    box-sizing border-box
+
+    li
+      margin 20px 0
+
+      &.account
+        a
+          color #ddd
+
+      a
+        text-decoration none
+        font-weight 300
+        color #fff
+        text-transform uppercase
+        font-size 20px
+
+        &:hover
+          font-weight 700

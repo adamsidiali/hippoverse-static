@@ -1,0 +1,462 @@
+<template name="MainLayout">
+  {{> Template.dynamic template=nav }}
+  {{> Template.dynamic template=content }}
+  {{> Template.dynamic template=footer }}
+
+  {{#if openContactModal}}
+    {{>contactModal}}
+  {{/if}}
+
+</template>
+
+<template name="home">
+
+  <div class="home-wrapper animated fadeIn">
+    <div class="banner">
+      <div class="side bottom">
+        <h1>Streamline your communication with <span>Hippoverse</span></h1>
+        <p>
+          Medical technology has come a long way in the past few decades, yet communication lags behind. Most medical practices aren't able to effectively engage their patients because of this. Hippoverse is the answer. Welcome to medical communication, modernized!
+        </p>
+        <div class="action-buttons">
+          <a class="live-demo">Get A Live Demo</a>
+          <a class="start-trial" href="/register">Start A Free Trial</a>
+        </div>
+      </div>
+      <div class="side top">
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/illustration.png" alt="" />
+      </div>
+    </div>
+    <div class="headline-feature">
+      <div class="side top">
+        <h1>Unified Messaging</h1>
+        <p>
+          Hippoverse aggregates all of your communication into a centralized inbox.
+        </p>
+      </div>
+      <div class="side bottom">
+        <iframe src="https://player.vimeo.com/video/97355436?title=0&byline=0&portrait=0" width="400" height="224" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="features-grid-wrapper">
+      <h1><i class="ion-ribbon-b"></i> Features</h1>
+      <div class="features-grid">
+        <div class="feature">
+          <h4><i class="ion-archive"></i> Unified Inbox</h4>
+          <p>
+            Aggregates all email, phone, text, voicemail, and fax messages into one central system for doctors to access anywhere.
+          </p>
+          <a href="/features"><span class="learn-more-button">Learn more <i class="ion-ios-arrow-right"></i></span></a>
+        </div>
+        <div class="feature">
+          <h4><i class="ion-android-cloud-done"></i> Answering Services</h4>
+          <p>
+            A complete cloud based answering service including customizable routing, voicemail, and after hours phone support.
+          </p>
+          <a href="/features"><span class="learn-more-button">Learn more <i class="ion-ios-arrow-right"></i></span></a>
+        </div>
+        <div class="feature">
+          <h4><i class="ion-chatbubble-working"></i> Secure Texting</h4>
+          <p>
+            Send secure text messages to patients and office staff with ability to attach photos, videos, and voice recordings.
+          </p>
+          <a href="/features"><span class="learn-more-button">Learn more <i class="ion-ios-arrow-right"></i></span></a>
+        </div>
+        <div class="feature">
+          <h4><i class="ion-person-stalker"></i> Education Portal</h4>
+          <p>
+            A cloud-based storage system with the ability to send customized collateral and multimedia to patients.
+          </p>
+          <a href="/features"><span class="learn-more-button">Learn more <i class="ion-ios-arrow-right"></i></span></a>
+        </div>
+        <div class="feature">
+          <h4><i class="ion-iphone"></i> Mobile</h4>
+          <p>
+            Secure mobile and tablet apps give doctors and staff access anywhere, anytime.
+          </p>
+          <a href="/features"><span class="learn-more-button">Learn more <i class="ion-ios-arrow-right"></i></span></a>
+        </div>
+        <div class="feature">
+          <h4><i class="ion-arrow-graph-up-right"></i> Analytics</h4>
+          <p>
+            Increase productivity and accountability in the office by tracking user behavior and response times.
+          </p>
+          <a href="/features"><span class="learn-more-button">Learn more <i class="ion-ios-arrow-right"></i></span></a>
+        </div>
+      </div>
+    </div>
+    <div class="get-started-wrapper">
+      <h1>Get Started</h1>
+      <p>
+        Hippoverse is a solution that can help streamline your business and reduce your overhead right now. We integrate with your current phone and email systems so there is no need to change your contact information. Setup is easy and you don’t need someone technical to do it. Because your existing office setup is augmented, not changed, sign up is risk-free and painless. Oh, and it’s free!
+      </p>
+      <div class="action-buttons">
+        <a class="live-demo">Get A Live Demo</a>
+        <a class="start-trial" href="/register">Start A Free Trial</a>
+      </div>
+      <div class="img-wrapper">
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/ehr_cert.jpg" alt="" />
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/hit_cert.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+
+</template>
+
+<template name="features">
+
+  <div class="features-wrap animated fadeIn">
+    <h1>A box full of features.</h1>
+    <h4>All your communication. One inbox.</h4>
+    <div class="features-grid">
+      <div class="feature">
+        <h4><i class="ion-archive"></i> Unified Inbox</h4>
+        <p>
+          Get rid of that pen and paper and stop checking multiple systems to track down your office communication. Now every actionable item in your practice is centralized in one location. You can assign conversations, subscribe to them, comment on them with other staff members, communicate back-and-forth with patients, and more.
+        </p>
+      </div>
+      <div class="feature feature-img">
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/feature-unified-inbox.jpg" alt="" />
+      </div>
+      <div class="feature">
+        <h4><i class="ion-android-cloud-done"></i> Answering Services</h4>
+        <p>
+          Stop paying for costly overflow management services and for after hours support. Hippoverse is a complete cloud based answering service including customizable routing, voicemail, and after hours phone support. We even transcribe voicemails to text and provide a soft hold feature, so your patients don’t have to wait on hold.
+        </p>
+      </div>
+      <div class="feature">
+        <h4><i class="ion-chatbubble-working"></i> Secure Texting</h4>
+        <p>
+          Finally, the ability to send text messages in that complies with HIPAA regulation. Now you’ll have the piece of mind and convenience of texting patients, staff members, and doctors. Our HIPAA complaint text messaging give you the ability to securely send text messages along with pictures, videos, and voice recordings from the mobile app and your computer.
+        </p>
+      </div>
+      <div class="feature feature-img">
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/feature-mobile.jpg" alt="" />
+      </div>
+      <div class="feature">
+        <h4><i class="ion-iphone"></i> Mobile</h4>
+        <p>
+          Now you have all your messages in real time on the go. Now your practice travels with you, wherever you may be. Access to all your messages, all your contacts, and the ability to respond from our secure mobile apps. You can also make secure phone calls and text messages from within the app without using your personal cell phone number. You can send photos, videos, voice recordings and forward calls.
+        </p>
+      </div>
+      <div class="feature">
+        <h4><i class="ion-person-stalker"></i> Education Portal</h4>
+        <p>
+          No more outdated brochures and photo copied pamphlets. We provide a central place for doctors to send personalized collateral to their patients including specific information based on ICD10 diagnosis codes and CPT procedure codes. You can send your patients video, web links, checklists, PDF’s and reminders to facilitate patient education and awareness to participate in their own care.
+        </p>
+      </div>
+      <div class="feature">
+        <h4><i class="ion-arrow-graph-up-right"></i> Analytics</h4>
+        <p>
+          How efficient is your office, who is your best employee? Now you’ll know, our analytics give you complete visibility to your office and staff members at all times. You’ll be able to track user behavior, response times, and other key metrics to measure how efficient your office and staff are.
+        </p>
+      </div>
+    </div>
+
+    <div class="benefits-wrap">
+      <h3>....with some serious benefits.</h3>
+      <div class="benefits">
+        <div class="benefit">
+          <i class="ion-happy-outline"></i>
+          <p>
+            Improves patient communication, engagement, and satisfaction
+          </p>
+        </div>
+        <div class="benefit">
+          <i class="ion-speedometer"></i>
+          <p>
+            Improves office productivity
+          </p>
+        </div>
+        <div class="benefit">
+          <i class="ion-cash"></i>
+          <p>
+            Decreases costs while increasing doctor ratings
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</template>
+
+
+<template name="pricing">
+
+  <div class="pricing-wrap animated fadeIn">
+    <h1>Pricing</h1>
+    <h4>Includes a free 14-day trial.</h4>
+
+    <div class="pricing-options">
+      <div class="option option-info">
+        <p>
+          If your practice has <input class="pricing-input" type="number" name="numOfPractitioners" value="{{practitionerNumber}}"> practitioners, your practice could profit an additional <span>${{dollarsSaved}}</span> per year (based on average phone and messaging costs, increased staff efficiency savings).
+        </p>
+      </div>
+      <div class="option">
+        <h3>Simply-Priced Plan</h3>
+        <div class="price">
+          <span>$149</span><span>$99</span>
+        </div>
+        <p class="price-detail">
+          per month per practitioner<br>(introductory beta pricing)
+        </p>
+        <ul>
+          <li>Unlimited Calling</li>
+          <li>Unlimited Messaging</li>
+          <li>Answering Service</li>
+          <li>Fax/Email Importing</li>
+          <li>Education Portal</li>
+          <li>Analytics</li>
+        </ul>
+
+        <div class="practitioner-details">
+          <span>1-20 Practitioners</span><br>(larger practices please contact us)
+        </div>
+
+        <a href="/register" class="option-sign-up">Sign up for free</a>
+
+      </div>
+    </div>
+
+  </div>
+
+</template>
+
+<template name="about">
+
+  <div class="about-wrapper animated fadeIn">
+    <h1>About Us</h1>
+    <h4 class="heading">Hippoverse creates customer service software for medical practices to help doctors improve communication with patients, vendors, and other doctors, while also improving internal office communication for a better end-user experience.</h4>
+    <div class="profiles">
+      <div class="profile">
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/hart_woolery.jpg" alt="" />
+        <div class="creds">
+          <h3>Hart Woolery</h3>
+          <h4>CEO &amp; Founder</h4>
+          <p>
+            Hart has been an entrepreneur since graduating from UC San Diego in 2005. His background in development and design is diverse, most of it self-taught starting at a young age. He was part of a small team at Goowy Media that was eventually acquired by AOL. In 2009 he started a mobile application development company, Appstem Media, that has since grown to over 15 employees and builds mobile solutions for number of brand name clients like Tesla Motors, Kaiser Permanente, Johnson & Johnson, and many more. Hart left Appstem in 2014 in order to fully dedicate his time to Hippoverse.
+          </p>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="creds right">
+          <h3>Dr. Erik Stark, MD</h3>
+          <h4>Medical Advisor &amp; Founder</h4>
+          <p>
+            Doctor Erik Stark is a practicing orthopaedic surgeon in Southern California. He obtained his Medical Degree at Upstate Medical University at Syracuse and then completed his orthopaedic training at Boston University where he published several papers and won the research achievement award for his class. Originally from New York, Dr. Stark relocated to San Diego and became a partner in a busy sports medicine practice. He currently serves as the team physician for multiple local high school and college athletic teams. Dr. Stark has a great understanding of health IT as the physician champion for the Electronic Health Record implementation at his practice of 20 physicians. On a daily basis he experiences the challenges of maintaining good communication with patients and staff members in a HIPAA compliant world.
+          </p>
+        </div>
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/stark_eric.jpg" alt="" />
+      </div>
+      <div class="profile">
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/balikian_rich.jpg" alt="" />
+        <div class="creds">
+          <h3>Dr. Rich Balikian, MD</h3>
+          <h4>Medical Advisor &amp; Founder</h4>
+          <p>
+            Richard Balikian MD is a Facial Plastic Surgeon in a solo private practice. Dr. Balikian received his BA in Art History from Columbia University and his MD from Boston University, where he was elected to the AOA Medical Honors Society. After completing his residency and fellowship in Facial Plastic Surgery, Dr. Balikian started his own private cosmetic practice. Dr. Balikian donates his time to charities such as the Face to Face Program which provides pro-bono reconstructive surgery for victims of domestic violence. As a business owner, he quickly learned the deficiencies inherent in doctor-patient, doctor-staff, and intra-office communication.
+          </p>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="creds right">
+          <h3>Dr. Vishal Verma, MD</h3>
+          <h4>Board Member &amp; Advisor</h4>
+          <p>
+            Dr. Vishal Verma is originally from Minnesota and has spent the last decade in San Diego. He earned both his Bachelor of Science and Doctorate of Medicine in the prestigious accelerated 6-year Honors Program in Medicine (HPME) at the University of Miami. He continued his medical training with a residency in Radiology at the University of Chicago and an MRI fellowship at the University of California – San Diego. His passion and talent for aesthetics led to the creation of a truly unique salon and spa concept incorporating both medical and non-medical beauty services. Revive is recognized as one of the top salons and medical spas nationally.
+          </p>
+        </div>
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/verma_vish.jpg" alt="" />
+      </div>
+      <div class="profile">
+        <img src="packages/adamsidiali_hippoverse-static/public/assets/bard_alex.jpg" alt="" />
+        <div class="creds">
+          <h3>Alex Bard</h3>
+          <h4>Advisor</h4>
+          <p>
+            Alex Bard is a passionate, driven entrepreneur and has been part of the founding team of four internet software start ups including eShare Technologies, eAssist Global Solutions, Goowy Media, and Assistly. Assistly was acquired by Salesforce.com in September of 2011. In 2012 Assistly was relaunched as desk.com and Alex is the current SVP & GM of Service Cloud & Desk.com. Alex is also an advisor and investor in several other start-ups including Klout, Kabam, Moon Express, Hello Inc, Thalmic Labs, Bitium, Get Around, Space Monkey, Stitch Labs, 310 Labs, True Ventures, Venture51, Social Leverage, Bullpen, Hippoverse, and others. Alex currently resides as the CEO of Campaign Monitor.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>
+
+
+<template name="certification">
+  <div class="certification-wrapper animated fadeIn">
+    <h1>Certification</h1>
+    <h4>Hippoverse has been certified by InfoGard Laboratories as an ONC-ACB Certified Modular EHR product. Hippoverse is qualified for Stage 2 Meaningful Use.</h4>
+    <div class="img-wrapper">
+      <img src="packages/adamsidiali_hippoverse-static/public/assets/ehr_cert.jpg" alt="" />
+      <img src="packages/adamsidiali_hippoverse-static/public/assets/hit_cert.jpg" alt="" />
+    </div>
+
+    <table>
+      <tr>
+        <td>
+          Vendor Name
+        </td>
+        <td>
+          Hippoverse
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Certified EHR Name
+        </td>
+        <td>
+          Hippoverse
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Certified EHR Version
+        </td>
+        <td>
+          1.0.0.516
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Classification
+        </td>
+        <td>
+          Modular EHR
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Practice Setting
+        </td>
+        <td>
+          Ambulatory
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Requirements Edition
+        </td>
+        <td>
+          2014
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Certification Criteria
+        </td>
+        <td>
+          §170.314(d)(3), (d)(5), (e)(3), (g)(1), and (g)(4)
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Clinical Quality Measures
+        </td>
+        <td>
+          N/A
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Additional SW Required
+        </td>
+        <td>
+          N/A
+        </td>
+      </tr>
+      <tr>
+        <td>
+          InfoGard Certification #
+        </td>
+        <td>
+          IG-3403-15-0004
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Certification Date
+        </td>
+        <td>
+          January 15, 2015
+        </td>
+      </tr>
+    </table>
+    <p>
+      Disclaimer: This EHR Module is 2014 Edition compliant and has been certified by an ONC-ACB in accordance with the applicable certification criteria adopted by the Secretary of Health and Human Services. This certification does not represent an endorsement by the U.S. Department of Health and Human Services. <a href="http://www.infogard.com/healthcare_it/ehr_testing_and_certification/ehr_certified_products" target="_blank">Click here to see the InfoGard testing criteria.</a>
+    </p>
+  </div>
+</template>
+
+
+
+
+<template name="joinTeam">
+
+  <div class="join-team-wrapper animated fadeIn">
+
+    <h1>Join Our Team</h1>
+    <h4>and put your passion to good use!</h4>
+
+    <div class="jobs-wrapper">
+      <ul>
+        <li>
+          <h3>What is Hippoverse?</h3>
+          <p>
+            Hippoverse is a startup focused on building a cutting-edge communication tool for medical practices. Our primary product is universal inbox for all phone, voicemail, email, text message, and fax traffic that goes through the practice, allowing practices to keep their communication organized and efficient.
+          </p>
+        </li>
+        <li>
+          <h3>Who Should Apply?</h3>
+          <p>
+            Creative people who are self-motivated, and good at solving problems independently.
+          </p>
+        </li>
+        <li>
+          <h3>Who Needn't Apply?</h3>
+          <p>
+            Basically anyone on <a href="http://theoatmeal.com/comics/interviewees" target="_blank">this list.</a> Oh and recruiters.
+          </p>
+        </li>
+        <li>
+          <h3>Why Should I Apply?</h3>
+          <p>
+            You are at a fork in the road. One path leads to Hippoverse. One path leads somewhere else. We can't guarantee that choosing Hippoverse will be the best decision you've ever made in your life, but as part of our team, damned if we won't try our best to make you feel that way.
+          </p>
+        </li>
+        <li>
+          <h3>Where And When Will I Work?</h3>
+          <p>
+            Where and whenever you prefer, under the simple condition that you complete the tasks given to you with pride and efficiency. We strongly believe that people work most effectively without distraction, and on their own sleeping, eating, and exercising schedule.
+          </p>
+        </li>
+      </ul>
+
+      <div class="available-jobs">
+        <h2>Open Roles <span>(must be authorized to work full-time in the US)</span></h2>
+        <ul>
+          <li class="open-job" data-job="developer"><i class="ion-code"></i> Do-It-All Developer</li>
+          <li class="open-job" data-job="designer"><i class="ion-paintbrush"></i> UI/UX/U Rule At Design</li>
+          <li class="open-job" data-job="voip"><i class="ion-ios-telephone"></i> VOIP Virtuoso</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+  {{#if openDevJobModal}}
+    {{> devJobModal}}
+  {{/if}}
+
+  {{#if openDesignJobModal}}
+    {{> designJobModal}}
+  {{/if}}
+
+  {{#if openVoipJobModal}}
+    {{> voipJobModal}}
+  {{/if}}
+
+</template>

@@ -1,0 +1,57 @@
+footer
+  background-color #333
+  display flex
+  display -webkit-flex
+  flex-flow row nowrap
+  -webkit-flex-flow row nowrap
+  justify-content flex-start
+  -webkit-justify-content flex-start
+
+  @media (max-width:600px)
+    flex-flow column nowrap
+    -webkit-flex-flow column nowrap
+
+  .side
+    flex 1
+    -webkit-flex 1
+    text-align center
+    padding 20px
+    box-sizing border-box
+
+    h3
+      color #888
+      font-size 20px
+      font-weight 100
+      margin 20px 0
+      border-bottom 2px solid #222
+      padding-bottom 10px
+
+
+    ul
+      list-style none
+      margin 0
+      padding 0
+
+      li
+        color #aaa
+        margin 10px auto
+        font-weight 300
+        letter-spacing 1px
+
+        a
+          text-decoration none
+          color #aaa
+
+          &:hover
+            color #fff
+
+
+.subfooter
+  background-color #222
+  padding 20px
+
+  p
+    color #666
+    text-align center
+    font-weight 100
+    letter-spacing 1px
